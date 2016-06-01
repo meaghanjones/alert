@@ -1,4 +1,11 @@
 $(document).ready(function() {
-  $("form").submit(function(){
-    alert("Submitted");
+  $("#blanks").submit(function(event) {
+    var blanks = $("input#sentence").val();
+    var uppercase = blanks.toUpperCase();
+    alert(uppercase);
+    event.preventDefault();
+
+
+
+  });
 });
